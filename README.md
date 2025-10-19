@@ -27,5 +27,69 @@ The system includes both:
 - **Browser Automation:** Chrome via `undetected-chromedriver`  
 - **Output:** Downloads and saves cause list files locally  
 - **CAPTCHA:** User-entered (manual input, no bypassing)  
-## Project Structure
+
+## Installation
+
+### Clone the repository:
+
+- git clone https://github.com/darkbeast18/causelist.git
+
+
+### Create a virtual environment (optional):
+
+-python -m venv venv
+
+-venv\Scripts\activate # for Windows
+
+-source venv/bin/activate # for Linux/Mac
+
+
+---
+
+## Usage
+
+### Streamlit Application
+
+Run the main application:
+
+
+Then in your browser:
+
+1. Select **State**, **District**, and **Court Complex**.  
+2. Choose the **Date** of the cause list.  
+3. Open the eCourts page when Selenium launches the browser.  
+4. Enter the **CAPTCHA** displayed on the site into the Streamlit app.  
+5. Choose **Civil** or **Criminal** and click **Download**.  
+6. The cause list will be saved as a text file inside the `output/` folder.
+
+---
+
+### HTML Frontend
+
+If you need to showcase the project visually:
+
+1. Open `index.html` in your browser.  
+2. Enter the **State**, **District**, **Court Complex**, **Court Name**, **Date**, and **CAPTCHA**.  
+3. Select **Case Type (Civil or Criminal)** and click **Download Cause List**.  
+4. This version is static and mainly used for **UI demonstration**.
+
+---
+
+## Output Example
+
+Sl No | Case Number | Petitioner | Respondent | Next Date | Purpose
+
+1 | CRL.A. 1234/2024 | Ramesh vs State of AP | 18-10-2025 | Hearing
+
+2 | CRL.MP. 567/2024 | Suresh vs Police Dept. | 20-10-2025 | Judgment
+
+---
+
+## License
+
+This project is for **educational purposes only** and uses publicly accessible data from the official eCourts India portal.  
+All rights to the data belong to the **Government of India’s eCourts Services**.
+
+---
+
 
