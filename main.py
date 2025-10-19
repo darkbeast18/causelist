@@ -84,7 +84,7 @@ def save_all_cases_to_txt(html, filename="case_results.txt"):
 
     st.success(f"Results saved to {filename}")
     
-    # ----------------- Download Button -----------------
+
     with open(filename, "rb") as f:
         st.download_button(
             label="📥 Download Results",
@@ -195,3 +195,4 @@ if captcha_val:
         save_all_cases_to_txt(driver.page_source)
     except TimeoutException:
         st.error("Timeout: Result table did not appear.")
+
