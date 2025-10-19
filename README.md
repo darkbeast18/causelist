@@ -64,16 +64,6 @@ Then in your browser:
 
 ---
 
-### HTML Frontend
-
-If you need to showcase the project visually:
-
-1. Open `index.html` in your browser.  
-2. Enter the **State**, **District**, **Court Complex**, **Court Name**, **Date**, and **CAPTCHA**.  
-3. Select **Case Type (Civil or Criminal)** and click **Download Cause List**.  
-4. This version is static and mainly used for **UI demonstration**.
-
----
 
 ## Output Example
 
