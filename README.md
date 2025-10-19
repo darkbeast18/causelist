@@ -1,27 +1,31 @@
-# causelist
-eCourts Cause List Downloader
+# eCourts Cause List Downloader
 
-A Python-based web automation system that allows users to fetch and download district court cause lists directly from the official eCourts website
-.
+A Python-based web automation system that allows users to fetch and download **district court cause lists** directly from the official [eCourts website](https://services.ecourts.gov.in/ecourtindia_v6/?p=cause_list/).
 
 The system includes both:
+- A **Streamlit application** that uses Selenium for real-time scraping.
+- A **modern HTML interface** for demonstration and assignment submission.
 
-A Streamlit application that uses Selenium for real-time scraping.
+---
 
-A modern HTML interface for demonstration and assignment submission.
+## Features
 
-Features
+- Fetch real-time cause lists directly from the eCourts portal.  
+- Select **State, District, Court Complex, Court Name**, and **Date**.  
+- Manual **CAPTCHA entry** supported.  
+- Choose **Civil** or **Criminal** case type.  
+- Download complete cause lists as PDF or text.  
+- Built with **Selenium** for automation and **Streamlit** for UI.  
+- Optional standalone **HTML + JS frontend** with a minimal black-and-white design.
 
-Fetch real-time cause lists directly from the eCourts portal.
+---
 
-Select State, District, Court Complex, Court Name, and Date.
+## Technical Implementation
 
-Manual CAPTCHA entry supported.
+- **Backend:** Python (Selenium, BeautifulSoup, Streamlit)  
+- **Frontend:** HTML, CSS, JavaScript (Monochrome modern design)  
+- **Browser Automation:** Chrome via `undetected-chromedriver`  
+- **Output:** Downloads and saves cause list files locally  
+- **CAPTCHA:** User-entered (manual input, no bypassing)  
+## Project Structure
 
-Choose Civil or Criminal case type.
-
-Download complete cause lists as PDF or text.
-
-Built with Selenium for automation and Streamlit for UI.
-
-Optional standalone HTML + JS frontend with a minimal black-and-white design.
